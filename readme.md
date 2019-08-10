@@ -1,4 +1,4 @@
-### <img src="https://raw.githubusercontent.com/Fody/Costura/master/package_icon.png" height="28px"> Costura is an add-in for [Fody](https://github.com/Fody/Home/)
+### <img src="/src/icon.png" height="28px"> Costura is an add-in for [Fody](https://github.com/Fody/Home/)
 
 Embeds dependencies as resources.
 
@@ -37,7 +37,7 @@ Add `<Costura/>` to [FodyWeavers.xml](https://github.com/Fody/Home/blob/master/p
 This approach uses a combination of two methods
 
  * Jeffrey Richter's suggestion of using [embedded resources as a method of merging assemblies](http://blogs.msdn.com/b/microsoft_press/archive/2010/02/03/jeffrey-richter-excerpt-2-from-clr-via-c-third-edition.aspx)
- * Einar Egilsson's suggestion [using cecil to create module initializers](http://tech.einaregilsson.com/2009/12/16/module-initializers-in-csharp/)
+ * Einar Egilsson's suggestion [using Cecil to create module initializers](http://tech.einaregilsson.com/2009/12/16/module-initializers-in-csharp/)
 
 
 ### Details
@@ -181,7 +181,7 @@ Can not be defined with `ExcludeAssemblies`.
 
 Can use wildcards at the end of the name for partial matching.
 
-Can take two forms. 
+Can take two forms.
 
 As an element with items delimited by a newline.
 
@@ -239,7 +239,7 @@ Or as a attribute with items delimited by a pipe `|`.
 
 ### Native Libraries and PreloadOrder
 
-Native libraries can be loaded by Costura automatically. To include a native library include it in your project as an Embedded Resource in a folder called `costura32` or `costura64` depending on the bittyness of the library.
+Native libraries can be loaded by Costura automatically. To include a native library include it in your project as an Embedded Resource in a folder called `costura32` or `costura64` depending on the bitness of the library.
 
 Optionally you can also specify the order that preloaded libraries are loaded. When using temporary assemblies from disk mixed mode assemblies are also preloaded.
 
@@ -282,7 +282,7 @@ class Program
 
 ## Unit Testing
 
-Most unit test frameworks need the `.dll`s files in order to discover and perform the unit tests.  You may need to add Costura and a configuration like the below to your testing assembly. 
+Most unit test frameworks need the `.dll`s files in order to discover and perform the unit tests.  You may need to add Costura and a configuration like the below to your testing assembly.
 
 ```xml
 <Weavers>
@@ -295,4 +295,4 @@ Most unit test frameworks need the `.dll`s files in order to discover and perfor
 
 ## Icon
 
-<a href="http://thenounproject.com/noun/merge/#icon-No256" target="_blank">Merge</a> from The Noun Project
+[Merge](https://thenounproject.com/noun/merge/#icon-No256) produced by [Edward Boatman](https://thenounproject.com/edward/) from [The Noun Project](https://thenounproject.com).
